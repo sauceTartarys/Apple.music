@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<p>Все про популярну музику </p>
+{% for quiz in quizzes %}
+    <h1>{{quiz[1] }}</h1>
+    <p>{{quiz[2] }}</p>
+<a href="/quizz/{{quiz[0]}}"></a>
+
+{% endfor %}
+
+{% endblock %}
