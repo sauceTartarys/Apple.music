@@ -3,7 +3,9 @@
 {% block content %}
 
 <p>Все про популярну музику </p>
-{% for music or musicals %}
+ <img src="{{ url_for('static', filename='maxresdefault.jpg') }}" class="rounded" alt="Cinque Terre" width="304" height="236">
+
+{% for music in musicals %}
     <h1>{{music[1] }}</h1>
     <p>{{music[2] }}</p>
 <a href="/musics/{{music[0]}}">Перейти</a>

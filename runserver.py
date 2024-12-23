@@ -15,4 +15,4 @@ def index():
     db_manager = DBMusic(db_name)
     return render_template("index.html",musicals=database)
 
-app.run(port=8000)
+app.run(port=8001)
