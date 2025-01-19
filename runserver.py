@@ -6,7 +6,7 @@ app = Flask("Music")
 db_name = "music.db"
 database = [
     (0,"We are the danger", "Цей рок для любителів", "Jay Maroni, Voelker Bros",1517737,'пісня','https://www.youtube.com/watch?v=Ze9UBqiha9g',"maxresdefault.jpg"),
-    (0,"Daylight", "Цей рок був популярний в 2023р ", "гурт пісні: David Kushner, Rob Kirvan, Rick Hornby, Hayden Robert Hubers", 367276920, "пісня","https://www.youtube.com/watch?v=MoN9ql6Yymw","maxresdefault.jpg")
+    (1,"Daylight", "Цей рок був популярний в 2023р ", "гурт пісні: David Kushner, Rob Kirvan, Rick Hornby, Hayden Robert Hubers", 367276920, "пісня","https://www.youtube.com/watch?v=MoN9ql6Yymw","maxresdefault.jpg")
 ]
 
 
@@ -23,7 +23,7 @@ def mamoder():
 @app.route("/fongers")
 def kerp():
     db_manager = DBMusic(db_name)
-    return render_template("fonk.html",musicals=database)
+    return render_template("fonge.html",musicals=database)
 
 
 app.run(port=8002)
