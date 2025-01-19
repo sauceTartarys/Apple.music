@@ -20,5 +20,10 @@ def mamoder():
     db_manager = DBMusic(db_name)
     return render_template("2025.html",musicals=database)
 
+@app.route("/fongers")
+def kerp():
+    db_manager = DBMusic(db_name)
+    return render_template("fonk.html",musicals=database)
+
 
 app.run(port=8002)
